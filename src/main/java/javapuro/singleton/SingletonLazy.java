@@ -1,4 +1,4 @@
-package javapuro;
+package javapuro.singleton;
 
 /**
  * Singleton "preguiçoso"

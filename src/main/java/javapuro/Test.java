@@ -1,5 +1,10 @@
 package javapuro;
 
+import javapuro.singleton.SingletonEager;
+import javapuro.singleton.SingletonLazy;
+import javapuro.singleton.SingletonLazyHolder;
+import javapuro.strategy.*;
+
 public class Test {
     public static void main(String[] args) {
         // Singleton
@@ -18,6 +23,29 @@ public class Test {
         System.out.println(lazyHolder);
         lazyHolder = SingletonLazyHolder.getInstancia();
         System.out.println(lazyHolder);
+
+
+        // Strategy
+
+        Comportamento defensivo = new ComportamentoDefensivo();
+        Comportamento normal = new ComportamentoNormal();
+        Comportamento agressivo = new ComportamentoAgressivo();
+
+        Daleks dalek = new Daleks();
+        dalek.setComportamento(normal);
+        dalek.mover();
+        dalek.mover();
+        dalek.mover();
+        dalek.setComportamento(defensivo);
+        dalek.mover();
+        dalek.mover();
+        dalek.setComportamento(agressivo);
+        dalek.mover();
+        dalek.mover();
+        dalek.mover();
+        dalek.mover();
+        dalek.mover();
+
 
     }
 }

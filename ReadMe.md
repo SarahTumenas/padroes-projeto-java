@@ -4,7 +4,7 @@ Neste repositório será compartilhado o projeto desenvolvido através da explor
 
 Inicialmente,  é importante entender os conceitos dos padrões para a melhor escolha para o projeto.
 
-A princípio foram escolhidos  um padrão de cada tipo Singleton, Strategy, Facade, para implementação em Java puro, para melhor compreensão de suas definições.
+A princípio foram escolhidos  um padrão de cada tipo (Singleton, Strategy, Facade), para implementação em Java puro, para melhor compreensão de suas definições.
 
 Assim, posteriormente, utilizando o framework Spring, baseando-se nos mesmos três padrões escolhidos em Java puro,  foi construída uma API REST, com documentação JavaDoc, OpenAPI (Swagger) para consumir a API.
 

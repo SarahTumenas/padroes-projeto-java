@@ -1,5 +1,6 @@
 package javapuro;
 
+import javapuro.facade.Facade;
 import javapuro.singleton.SingletonEager;
 import javapuro.singleton.SingletonLazy;
 import javapuro.singleton.SingletonLazyHolder;
@@ -46,6 +47,10 @@ public class Test {
         dalek.mover();
         dalek.mover();
 
+        // Facade
+
+        Facade facade = new Facade();
+        facade.migrarCliente("Xou da Xuxa", "22470");
 
     }
 }
